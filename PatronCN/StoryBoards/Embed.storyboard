@@ -14,7 +14,7 @@
         <!--Testimonial View Controller-->
         <scene sceneID="HFj-RO-EKa">
             <objects>
-                <viewController id="cIo-pa-Uhs" customClass="TestimonialViewController" customModule="PatronCN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Testimonial" id="cIo-pa-Uhs" customClass="TestimonialViewController" customModule="PatronCN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6ot-f6-jDN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -165,7 +165,7 @@
         <!--Benefit View Controller-->
         <scene sceneID="wme-cJ-XZO">
             <objects>
-                <viewController id="8xW-lk-jjO" customClass="BenefitViewController" customModule="PatronCN" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Benefit" id="8xW-lk-jjO" customClass="BenefitViewController" customModule="PatronCN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pel-oW-v0r">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

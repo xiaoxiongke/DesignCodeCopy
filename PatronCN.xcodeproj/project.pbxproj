@@ -43,6 +43,7 @@
 		555D3105209076F100143C16 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D30E5209076F100143C16 /* LoadingView.swift */; };
 		555D3106209076F100143C16 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555D30E6209076F100143C16 /* Info.plist */; };
 		555D3107209076F100143C16 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D30E7209076F100143C16 /* AsyncImageView.swift */; };
+		5585B89020AA6A7400FFD80C /* Section.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5585B88F20AA6A7400FFD80C /* Section.storyboard */; };
 		55A9E2E320A937C300E058D6 /* Embed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9E2E220A937C300E058D6 /* Embed.storyboard */; };
 		55A9E2E520A971E400E058D6 /* Dialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9E2E420A971E400E058D6 /* Dialog.storyboard */; };
 		55A9E2E720A9720F00E058D6 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */; };
@@ -55,6 +56,9 @@
 		55ADCC062094249C000F921B /* BookmarksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55ADCC052094249C000F921B /* BookmarksCell.swift */; };
 		55B2EE2F2092D52B004B67C5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B2EE2E2092D52B004B67C5 /* HomeViewController.swift */; };
 		55B635BB20A42B49000FA1E4 /* More.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55B635BA20A42B49000FA1E4 /* More.storyboard */; };
+		55B8CB9120AACA0300ECCF09 /* InteractionPanToClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8CB9020AACA0300ECCF09 /* InteractionPanToClose.swift */; };
+		55B8CB9420AADA7D00ECCF09 /* DCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8CB9320AADA7D00ECCF09 /* DCService.swift */; };
+		55B8CB9620AADBD000ECCF09 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55B8CB9520AADBD000ECCF09 /* Data.swift */; };
 		55CE428120901E5F009609E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE428020901E5F009609E0 /* AppDelegate.swift */; };
 		55CE428620901E5F009609E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55CE428420901E5F009609E0 /* Main.storyboard */; };
 		55CE428820901E60009609E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55CE428720901E60009609E0 /* Assets.xcassets */; };
@@ -65,6 +69,7 @@
 		55D3483B20A449BA00BF560D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3483A20A449BA00BF560D /* LoginViewController.swift */; };
 		55D3483D20A449D700BF560D /* UpdatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3483C20A449D700BF560D /* UpdatesViewController.swift */; };
 		55D3483F20A44A3100BF560D /* ExercisesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55D3483E20A44A3100BF560D /* ExercisesViewController.swift */; };
+		55E872CD20AA826F00C44F97 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55E872CC20AA826F00C44F97 /* Configuration.swift */; };
 		C0CBE65405A4943ACFDE27EA /* Pods_PatronCN.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0864142139D37D865E112145 /* Pods_PatronCN.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +129,7 @@
 		555D30E5209076F100143C16 /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		555D30E6209076F100143C16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555D30E7209076F100143C16 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
+		5585B88F20AA6A7400FFD80C /* Section.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Section.storyboard; sourceTree = "<group>"; };
 		55A9E2E220A937C300E058D6 /* Embed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Embed.storyboard; sourceTree = "<group>"; };
 		55A9E2E420A971E400E058D6 /* Dialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dialog.storyboard; sourceTree = "<group>"; };
 		55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +142,9 @@
 		55ADCC052094249C000F921B /* BookmarksCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksCell.swift; sourceTree = "<group>"; };
 		55B2EE2E2092D52B004B67C5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		55B635BA20A42B49000FA1E4 /* More.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = More.storyboard; sourceTree = "<group>"; };
+		55B8CB9020AACA0300ECCF09 /* InteractionPanToClose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractionPanToClose.swift; sourceTree = "<group>"; };
+		55B8CB9320AADA7D00ECCF09 /* DCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DCService.swift; sourceTree = "<group>"; };
+		55B8CB9520AADBD000ECCF09 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		55CE427D20901E5F009609E0 /* PatronCN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatronCN.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55CE428020901E5F009609E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55CE428520901E5F009609E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -152,6 +161,8 @@
 		55D3483A20A449BA00BF560D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		55D3483C20A449D700BF560D /* UpdatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdatesViewController.swift; sourceTree = "<group>"; };
 		55D3483E20A44A3100BF560D /* ExercisesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExercisesViewController.swift; sourceTree = "<group>"; };
+		55E872CA20AA7B2700C44F97 /* default.realm */ = {isa = PBXFileReference; lastKnownFileType = file; path = default.realm; sourceTree = "<group>"; };
+		55E872CC20AA826F00C44F97 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		8BBB4FB0EDA246B977F8FB66 /* Pods-PatronCN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatronCN.release.xcconfig"; path = "Pods/Target Support Files/Pods-PatronCN/Pods-PatronCN.release.xcconfig"; sourceTree = "<group>"; };
 		A045786172CBAC3A500BAB41 /* Pods-PatronCN.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatronCN.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PatronCN/Pods-PatronCN.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -267,8 +278,26 @@
 				55B635BA20A42B49000FA1E4 /* More.storyboard */,
 				55A9E2E220A937C300E058D6 /* Embed.storyboard */,
 				55A9E2E420A971E400E058D6 /* Dialog.storyboard */,
+				5585B88F20AA6A7400FFD80C /* Section.storyboard */,
 			);
 			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		55B8CB8F20AAC9D900ECCF09 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				55B8CB9020AACA0300ECCF09 /* InteractionPanToClose.swift */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		55B8CB9220AADA6E00ECCF09 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				55B8CB9320AADA7D00ECCF09 /* DCService.swift */,
+				55B8CB9520AADBD000ECCF09 /* Data.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		55CE427420901E5E009609E0 = {
@@ -296,6 +325,10 @@
 		55CE427F20901E5F009609E0 /* PatronCN */ = {
 			isa = PBXGroup;
 			children = (
+				55B8CB9220AADA6E00ECCF09 /* Data */,
+				55B8CB8F20AAC9D900ECCF09 /* Transition */,
+				55E872CB20AA825B00C44F97 /* Utils */,
+				55E872C920AA7B1900C44F97 /* Resources */,
 				55B635B920A42B39000FA1E4 /* StoryBoards */,
 				55ADCC00209422B9000F921B /* Cells */,
 				55B2EE2D2092D515004B67C5 /* ViewControllers */,
@@ -325,6 +358,22 @@
 				55CE42A220901E61009609E0 /* Info.plist */,
 			);
 			path = PatronCNUITests;
+			sourceTree = "<group>";
+		};
+		55E872C920AA7B1900C44F97 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				55E872CA20AA7B2700C44F97 /* default.realm */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		55E872CB20AA825B00C44F97 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				55E872CC20AA826F00C44F97 /* Configuration.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		6A899023877D9733A79A3BFD /* Pods */ = {
@@ -443,6 +492,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55A9E2E520A971E400E058D6 /* Dialog.storyboard in Resources */,
+				5585B89020AA6A7400FFD80C /* Section.storyboard in Resources */,
 				55CE428B20901E60009609E0 /* LaunchScreen.storyboard in Resources */,
 				55B635BB20A42B49000FA1E4 /* More.storyboard in Resources */,
 				555D30FF209076F100143C16 /* LoadingView.xib in Resources */,
@@ -525,6 +575,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55B8CB9420AADA7D00ECCF09 /* DCService.swift in Sources */,
 				55ADCC02209422CE000F921B /* ExercisesCell.swift in Sources */,
 				555D30EC209076F100143C16 /* ImageLoader.swift in Sources */,
 				55D3483B20A449BA00BF560D /* LoginViewController.swift in Sources */,
@@ -534,8 +585,10 @@
 				555D30F9209076F100143C16 /* DesignableButton.swift in Sources */,
 				55A9E2ED20A97E2F00E058D6 /* DiscountViewController.swift in Sources */,
 				555D30F5209076F100143C16 /* SpringTextView.swift in Sources */,
+				55E872CD20AA826F00C44F97 /* Configuration.swift in Sources */,
 				555D3104209076F100143C16 /* UnwindSegue.swift in Sources */,
 				55550E3020940AE500312163 /* ChaptersViewController.swift in Sources */,
+				55B8CB9120AACA0300ECCF09 /* InteractionPanToClose.swift in Sources */,
 				555D30F7209076F100143C16 /* Misc.swift in Sources */,
 				55ADCC062094249C000F921B /* BookmarksCell.swift in Sources */,
 				55550E3620940CB700312163 /* MoreViewController.swift in Sources */,
@@ -569,6 +622,7 @@
 				55B2EE2F2092D52B004B67C5 /* HomeViewController.swift in Sources */,
 				555D30F6209076F100143C16 /* SpringTransform.swift in Sources */,
 				555D30F1209076F100143C16 /* SoundPlayer.swift in Sources */,
+				55B8CB9620AADBD000ECCF09 /* Data.swift in Sources */,
 				555D3105209076F100143C16 /* LoadingView.swift in Sources */,
 				55550E3220940C9F00312163 /* BookmarksViewController.swift in Sources */,
 				55D3483F20A44A3100BF560D /* ExercisesViewController.swift in Sources */,
