@@ -19,10 +19,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <visualEffectView hidden="YES" opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-WH-YLi">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7uL-WH-YLi">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="6iU-DK-qfJ">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 </view>
                                 <blurEffect style="dark"/>
@@ -216,9 +216,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="dGX-np-n1J" firstAttribute="bottom" secondItem="B3k-ne-itI" secondAttribute="bottom" id="4gZ-ZA-bOR"/>
+                            <constraint firstItem="7uL-WH-YLi" firstAttribute="top" secondItem="u8s-2w-WMM" secondAttribute="top" id="D4o-bg-Znw"/>
                             <constraint firstItem="dGX-np-n1J" firstAttribute="leading" secondItem="B3k-ne-itI" secondAttribute="leading" id="FKE-RS-Yl8"/>
                             <constraint firstItem="7uL-WH-YLi" firstAttribute="leading" secondItem="B3k-ne-itI" secondAttribute="leading" id="Lp0-zp-dJG"/>
-                            <constraint firstItem="7uL-WH-YLi" firstAttribute="top" secondItem="B3k-ne-itI" secondAttribute="top" id="S6l-SM-NbH"/>
                             <constraint firstItem="7uL-WH-YLi" firstAttribute="bottom" secondItem="B3k-ne-itI" secondAttribute="bottom" id="Ymx-Fo-0B4"/>
                             <constraint firstItem="dGX-np-n1J" firstAttribute="top" secondItem="B3k-ne-itI" secondAttribute="top" id="n4Y-nD-Wjm"/>
                             <constraint firstItem="dGX-np-n1J" firstAttribute="trailing" secondItem="B3k-ne-itI" secondAttribute="trailing" id="pUa-rF-TO9"/>

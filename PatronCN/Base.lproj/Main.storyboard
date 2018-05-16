@@ -49,17 +49,17 @@
             <objects>
                 <viewController id="Eh9-1w-AOR" customClass="HomeViewController" customModule="PatronCN" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="exk-t8-dgX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="3912"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="4000"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZG-AA-QrB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="3829"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="3917"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ueR-0V-3BA" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swift4-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="w8X-6K-EKO">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="323"/>
+                                                <rect key="frame" x="0.0" y="-60" width="375" height="383"/>
                                             </imageView>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="iphone" translatesAutoresizingMaskIntoConstraints="NO" id="qYS-Zm-Tck">
                                                 <rect key="frame" x="207" y="30" width="128" height="326"/>
@@ -227,7 +227,7 @@
                                             <constraint firstAttribute="trailing" secondItem="qYS-Zm-Tck" secondAttribute="trailing" constant="40" id="bBh-V9-a5C"/>
                                             <constraint firstItem="qYS-Zm-Tck" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="wMy-FJ-d5N" secondAttribute="trailing" constant="8" symbolic="YES" id="deG-lz-Ltr"/>
                                             <constraint firstItem="LaP-FW-veM" firstAttribute="centerY" secondItem="qYS-Zm-Tck" secondAttribute="centerY" id="ncQ-A5-4e5"/>
-                                            <constraint firstItem="w8X-6K-EKO" firstAttribute="top" secondItem="ueR-0V-3BA" secondAttribute="top" id="skY-HY-VoA"/>
+                                            <constraint firstItem="w8X-6K-EKO" firstAttribute="top" secondItem="ueR-0V-3BA" secondAttribute="top" constant="-60" id="skY-HY-VoA"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jD9-9x-Lde" userLabel="bookView">
@@ -895,7 +895,7 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="ZZG-AA-QrB" secondAttribute="trailing" id="ARb-XA-zcQ"/>
                             <constraint firstItem="ZZG-AA-QrB" firstAttribute="bottom" secondItem="73G-ak-zvt" secondAttribute="bottom" id="KFe-hg-l2v"/>
-                            <constraint firstItem="ZZG-AA-QrB" firstAttribute="top" secondItem="73G-ak-zvt" secondAttribute="top" id="Nbo-lk-HfH"/>
+                            <constraint firstItem="ZZG-AA-QrB" firstAttribute="top" secondItem="exk-t8-dgX" secondAttribute="top" id="KIB-uh-FyN"/>
                             <constraint firstItem="ZZG-AA-QrB" firstAttribute="leading" secondItem="exk-t8-dgX" secondAttribute="leading" id="tZk-7L-tmw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="73G-ak-zvt"/>
@@ -908,10 +908,10 @@
                             </connections>
                         </barButtonItem>
                         <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YZJ-7G-S3o" customClass="DesignableButton" customModule="PatronCN" customModuleProvider="target">
-                            <rect key="frame" x="135" y="7" width="105" height="30"/>
+                            <rect key="frame" x="128.66666666666666" y="7" width="118" height="30"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.3588469889" green="0.21569153669999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <state key="normal" title="  Get the book  ">
+                            <state key="normal" title="  Get full access  ">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
                             <userDefinedRuntimeAttributes>
@@ -941,7 +941,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
                     <size key="freeformSize" width="375" height="4000"/>
                     <connections>
                         <outlet property="backgroundImage" destination="w8X-6K-EKO" id="UlJ-BA-UCI"/>
@@ -959,9 +959,9 @@
                         <outlet property="phoneImage" destination="qYS-Zm-Tck" id="OvP-Jp-RXQ"/>
                         <outlet property="scrollView" destination="ZZG-AA-QrB" id="yMn-yD-pR0"/>
                         <outlet property="titleLabel" destination="wMy-FJ-d5N" id="eC5-hb-vru"/>
-                        <segue destination="drO-bX-3kK" kind="presentation" identifier="homeToPurchase" id="WKf-fv-fBz"/>
-                        <segue destination="pVC-1y-o5F" kind="showDetail" identifier="homeToDiscount" id="Btw-PV-xhH"/>
-                        <segue destination="fWP-0V-HbO" kind="presentation" identifier="homeToLogin" id="tQH-G6-d3L"/>
+                        <segue destination="drO-bX-3kK" kind="presentation" identifier="homeToPurchase" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="WKf-fv-fBz"/>
+                        <segue destination="pVC-1y-o5F" kind="presentation" identifier="homeToDiscount" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="Btw-PV-xhH"/>
+                        <segue destination="fWP-0V-HbO" kind="presentation" identifier="homeToLogin" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="tQH-G6-d3L"/>
                         <segue destination="tKe-Ch-6Ea" kind="presentation" id="a9J-nY-qYq"/>
                         <segue destination="gQW-LW-Bbg" kind="presentation" id="2ID-Oc-FWE"/>
                     </connections>

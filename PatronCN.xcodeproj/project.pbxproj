@@ -44,6 +44,7 @@
 		555D3106209076F100143C16 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 555D30E6209076F100143C16 /* Info.plist */; };
 		555D3107209076F100143C16 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 555D30E7209076F100143C16 /* AsyncImageView.swift */; };
 		5585B89020AA6A7400FFD80C /* Section.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5585B88F20AA6A7400FFD80C /* Section.storyboard */; };
+		55881BED20ABC1DB00648E73 /* Realm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55881BEC20ABC1DB00648E73 /* Realm.swift */; };
 		55A9E2E320A937C300E058D6 /* Embed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9E2E220A937C300E058D6 /* Embed.storyboard */; };
 		55A9E2E520A971E400E058D6 /* Dialog.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55A9E2E420A971E400E058D6 /* Dialog.storyboard */; };
 		55A9E2E720A9720F00E058D6 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */; };
@@ -130,6 +131,7 @@
 		555D30E6209076F100143C16 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		555D30E7209076F100143C16 /* AsyncImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		5585B88F20AA6A7400FFD80C /* Section.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Section.storyboard; sourceTree = "<group>"; };
+		55881BEC20ABC1DB00648E73 /* Realm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Realm.swift; sourceTree = "<group>"; };
 		55A9E2E220A937C300E058D6 /* Embed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Embed.storyboard; sourceTree = "<group>"; };
 		55A9E2E420A971E400E058D6 /* Dialog.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dialog.storyboard; sourceTree = "<group>"; };
 		55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
@@ -241,6 +243,33 @@
 			path = Spring;
 			sourceTree = "<group>";
 		};
+		55881BEB20ABC1C700648E73 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				55881BEC20ABC1DB00648E73 /* Realm.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		55881BEE20ABDB7100648E73 /* Dialog */ = {
+			isa = PBXGroup;
+			children = (
+				55A9E2EA20A97E2900E058D6 /* AccountViewController.swift */,
+				55A9E2EC20A97E2F00E058D6 /* DiscountViewController.swift */,
+				55A9E2EE20A97E3A00E058D6 /* PurchaseViewController.swift */,
+			);
+			path = Dialog;
+			sourceTree = "<group>";
+		};
+		55881BEF20ABDB8B00648E73 /* Embed */ = {
+			isa = PBXGroup;
+			children = (
+				55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */,
+				55A9E2E820A9724300E058D6 /* BenefitViewController.swift */,
+			);
+			path = Embed;
+			sourceTree = "<group>";
+		};
 		55ADCC00209422B9000F921B /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,6 +283,8 @@
 		55B2EE2D2092D515004B67C5 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				55881BEF20ABDB8B00648E73 /* Embed */,
+				55881BEE20ABDB7100648E73 /* Dialog */,
 				55B2EE2E2092D52B004B67C5 /* HomeViewController.swift */,
 				55550E2F20940AE500312163 /* ChaptersViewController.swift */,
 				55550E3120940C9F00312163 /* BookmarksViewController.swift */,
@@ -263,11 +294,6 @@
 				55D3483A20A449BA00BF560D /* LoginViewController.swift */,
 				55D3483C20A449D700BF560D /* UpdatesViewController.swift */,
 				55D3483E20A44A3100BF560D /* ExercisesViewController.swift */,
-				55A9E2E620A9720F00E058D6 /* TestimonialViewController.swift */,
-				55A9E2E820A9724300E058D6 /* BenefitViewController.swift */,
-				55A9E2EA20A97E2900E058D6 /* AccountViewController.swift */,
-				55A9E2EC20A97E2F00E058D6 /* DiscountViewController.swift */,
-				55A9E2EE20A97E3A00E058D6 /* PurchaseViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -325,6 +351,7 @@
 		55CE427F20901E5F009609E0 /* PatronCN */ = {
 			isa = PBXGroup;
 			children = (
+				55881BEB20ABC1C700648E73 /* Realm */,
 				55B8CB9220AADA6E00ECCF09 /* Data */,
 				55B8CB8F20AAC9D900ECCF09 /* Transition */,
 				55E872CB20AA825B00C44F97 /* Utils */,
@@ -604,6 +631,7 @@
 				555D30EA209076F100143C16 /* TransitionManager.swift in Sources */,
 				555D30E9209076F100143C16 /* KeyboardLayoutConstraint.swift in Sources */,
 				55A9E2E720A9720F00E058D6 /* TestimonialViewController.swift in Sources */,
+				55881BED20ABC1DB00648E73 /* Realm.swift in Sources */,
 				55ADCC0420942406000F921B /* ExercisesCollectionViewCell.swift in Sources */,
 				55D3483D20A449D700BF560D /* UpdatesViewController.swift in Sources */,
 				555D30EB209076F100143C16 /* TransitionZoom.swift in Sources */,

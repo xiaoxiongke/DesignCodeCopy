@@ -14,5 +14,6 @@ struct DataUser:Codable{
     var password:String
     var plan:String
     var date:String
+    var endDate:Date
 }
 

@@ -33,6 +33,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.delegate = self
+        navigationController?.navigationBar.barStyle = .blackTranslucent
         configureCollectionViews()
         configureTitleLabels()
         if appHasWideScreenForView(self.view){
@@ -77,21 +78,26 @@ class HomeViewController: UIViewController {
         performSegue(withIdentifier: "homeToPurchase", sender: nil)
     }
     
-    
-    @IBAction func clickLoginBtn(_ sender: UIBarButtonItem) {
-        performSegue(withIdentifier: "homeToLogin", sender: nil)
-    }
-    
-    
     @IBAction func clickLogoBtn(_ sender: UIBarButtonItem) {
 //        let tabVc = UIApplication.shared.keyWindow?.rootViewController as? UITabBarController
 //        tabVc?.selectedIndex = 4
         self.tabBarController?.selectedIndex = 4
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "homeToPurchase"{
+            let toView = segue.destination as! PurchaseViewController
+            toView.delegate = self
+            toView.modalPresentationCapturesStatusBarAppearance =  true
+        }
+    }
+
+    override var preferredStatusBarStyle: UIStatusBarStyle{
+        return .lightContent
+    }
     
-    func checkLogin(){
-        
+    override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation{
+        return .slide
     }
     
     override func didReceiveMemoryWarning() {
@@ -101,8 +107,36 @@ class HomeViewController: UIViewController {
     
 }
 
+extension HomeViewController:LoginViewControllerDelegate{
+    func loginButtonTapped() {
+        checkLogin()
+    }
+    
+    func checkLogin(){
+        if RealmService.isUserSuscribed(){
+            DispatchQueue.main.async {
+                self.loginButton.title = "Logout"
+            }
+        }else{
+            DispatchQueue.main.async {
+                self.loginButton.title = "Login"
+            }
+        }
+    }
+    
+    @IBAction func clickLoginBtn(_ sender: UIBarButtonItem) {
+        if RealmService.isUserSuscribed(){
+            RealmService.logout {
+                self.checkLogin()
+            }
+        }else{
+            performSegue(withIdentifier: "homeToLogin", sender: nil)
+        }
+    }
+}
 
-// MARK: - <#UICollectionViewDataSource#>
+
+// MARK: - UICollectionViewDataSource,UICollectionViewDelegate
 extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate{
 
     private func configure(collectionView:UICollectionView){
@@ -125,7 +159,38 @@ extension HomeViewController:UICollectionViewDataSource,UICollectionViewDelegate
 }
 
 
-// MARK: - <#UIScrollViewDelegate#>
+// MARK: - UIScrollViewDelegate
 extension HomeViewController:UIScrollViewDelegate{
-    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offSetY = scrollView.contentOffset.y
+
+        if offSetY < 0 {
+            contentView.transform = CGAffineTransform(translationX: 0, y: offSetY)
+            backgroundImage.transform = CGAffineTransform(translationX: 0, y: -offSetY/2)
+            titleLabel.transform = CGAffineTransform(translationX: 0, y: -offSetY/3)
+            phoneImage.transform = CGAffineTransform(translationX: 0, y: -offSetY/4)
+            bodyView.transform = CGAffineTransform(translationX: 0, y: -offSetY/5)
+
+        }
+        
+        
+        if offSetY > 0 {
+            UIView.animate(withDuration: 2) {
+                self.navigationController?.setNavigationBarHidden(false, animated: true)
+            }
+        }else{
+            UIView.animate(withDuration: 2) {
+                self.navigationController?.setNavigationBarHidden(true, animated: true)
+            }
+        }
+    }
+}
+
+
+// MARK: - PurchaseViewControllerDelegate
+extension HomeViewController:PurchaseViewControllerDelegate{
+    func purchaseViewControllerBenefitButtonTapped(tag: Int) {
+        
+    }
+
 }

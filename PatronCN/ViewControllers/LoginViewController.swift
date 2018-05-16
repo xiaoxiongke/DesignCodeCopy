@@ -47,7 +47,10 @@ class LoginViewController: UIViewController {
         let pwd = pwdTF.text!
         DCService.login(email: email, password: pwd) { (user) in
             if let user = user{
-                
+                RealmService.updateUsser(sender: user, completion: {[weak self] in
+                    self?.delegate?.loginButtonTapped()
+                    self?.dismiss(animated: true, completion: nil)
+                })
             }else{
                 DispatchQueue.main.async {
                     UIView.animateKeyframes(withDuration: 0.5, delay: 0, options: .allowUserInteraction, animations: {
